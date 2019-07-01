@@ -3,7 +3,7 @@ import 'package:homepage/homepage/banner.dart';
 import 'package:homepage/homepage/boxsearch.dart';
 import 'package:homepage/homepage/gridtrending.dart';
 void main()=>runApp(MyApp());
-
+//aaaaa
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
