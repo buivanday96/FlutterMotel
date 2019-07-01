@@ -14,10 +14,10 @@ class BannerCarousel extends StatelessWidget {
     height: 200.0,
     width: 350.0,
     child: new Carousel(
-      images: [
-        new ExactAssetImage('images/picture1.jpg'),
-        new ExactAssetImage('images/picture2.jpg'),
-        new ExactAssetImage("images/picture3.jpg")
+      images: [        
+          new ExactAssetImage(_imageName[0]), 
+          new ExactAssetImage(_imageName[1]), 
+          new ExactAssetImage(_imageName[2]), 
       ],
       dotSize: 4.0,
       dotSpacing: 15.0,
