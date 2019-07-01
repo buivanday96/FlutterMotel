@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:homepage/homepage/banner.dart';
 import 'package:homepage/homepage/boxsearch.dart';
 import 'package:homepage/homepage/gridtrending.dart';
+import 'package:homepage/homepage/authentic.dart';
 void main()=>runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -21,7 +22,7 @@ class HomePage extends StatelessWidget {
       body: Container(
         height: size.height,
         width: size.width,
-        color: Colors.white,
+        color: Colors.grey[100],
         child: SingleChildScrollView(
           child: Container(
             child: _column1(),
@@ -55,15 +56,26 @@ class HomePage extends StatelessWidget {
           ),
         ),
         Container(
+          //adadads
        //   height: 400,
           width: size.width,
           color: Colors.transparent,
           child: Trending(),
         ),
         Container(
-          height: 200,
           width: size.width,
-          color: Colors.yellow,
+          
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(25),
+            color: Colors.white,
+          ),
+          child: Authentic(),
+        ),
+        Container(
+          width: size.width,
+          height: 400,
+          color: Colors.transparent,
+
         )
       ],
     );
