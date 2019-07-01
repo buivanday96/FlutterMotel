@@ -7,8 +7,7 @@ class Trending extends StatelessWidget {
   }
   _containerSearchTrend() {
     return Container(
-      height: 300.0,
-     
+      height: 300.0,  
       margin: EdgeInsets.only(left: 15,bottom: 12,right: 15,top:2),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
@@ -25,27 +24,16 @@ class Trending extends StatelessWidget {
   }
   _gridViewTrend(){
     return GridView.extent(
-        physics: NeverScrollableScrollPhysics(),
+      physics: NeverScrollableScrollPhysics(),
        maxCrossAxisExtent: 150.0,
        mainAxisSpacing: 8.0,
        crossAxisSpacing: 8.0,
        padding: EdgeInsets.all(5.0),
-      children: _buildGridTittle2(6),
+      children: _buildGridTittle(6),
     );
   }
+
   List<Widget>_buildGridTittle(numberOfTiles){
-    List<String> name =['1','2','3','10','binhthanh','thuduc'];
-    List<Container> containers = new List<Container>.generate(numberOfTiles, 
-      (int index){
-        final imageName ='images/quan${name[index]}.jpg' ;
-        return Container(
-          child: Image.asset(imageName,fit: BoxFit.cover,),
-        );
-      }
-    );
-    return containers;
-  }
-  List<Widget>_buildGridTittle2(numberOfTiles){
     List<String> name =['1','2','3','10','binhthanh','thuduc'];
     List<String> name2 =['1','2','3','10','Bình Thạnh','Thủ Đức'];
     List<Stack> containers = List<Stack>.generate(numberOfTiles, 
